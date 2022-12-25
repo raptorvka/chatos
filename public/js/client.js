@@ -150,7 +150,7 @@ const buttons = {
 
 const isRulesActive = true; // Presenter can do anything, guest is slightly moderate, if false no Rules for the room.
 
-const forceCamMaxResolutionAndFps = false; // This force the webCam to max resolution, up to 4k and 60fps (very high bandwidth are required) if false, you can set it from settings
+const forceCamMaxResolutionAndFps = true; // This force the webCam to max resolution, up to 4k and 60fps (very high bandwidth are required) if false, you can set it from settings
 
 const userLimitsActive = false; // Limit users per room
 
@@ -172,7 +172,7 @@ let initEnumerateDevicesFailed = false; // Check if user webcam and audio init i
 
 let isVideoPrivacyActive = false; // Video circle for privacy
 
-let surveyActive = true; // when leaving the room give a feedback, if false will be redirected to newcall page
+let surveyActive = false; // when leaving the room give a feedback, if false will be redirected to newcall page
 
 let surveyURL = 'https://www.questionpro.com/t/AUs7VZq00L';
 
@@ -185,8 +185,8 @@ let isIPadDevice = false;
 let isVideoFullScreenSupported = true;
 
 // video cam - screen max frame rate
-let videoMaxFrameRate = 30;
-let screenMaxFrameRate = 30;
+let videoMaxFrameRate = 60;
+let screenMaxFrameRate = 60;
 
 let videoQualitySelectedIndex = 0; // default
 
